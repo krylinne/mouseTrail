@@ -27,7 +27,7 @@ final class lineRender: NSView {
             path.move(to: CGPoint(x: p0.x, y: p0.y))
             path.line(to: CGPoint(x: p1.x, y: p1.y))
             path.lineWidth = fade * config.width
-            path.lineCapStyle = .round
+            path.lineCapStyle = .butt
 
             if config.glow {
                 let shadow = NSShadow()
